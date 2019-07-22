@@ -45,7 +45,7 @@ public class CustomerResource {
 	}
 	
 	@GetMapping("/customers")
-	public ResponseEntity<?> getDeathDate() {
+	public ResponseEntity<?> getAllCustomer() {
 		return new ResponseEntity<>(customerService.getAllCustomer(),HttpStatus.OK);
 	}
 	
