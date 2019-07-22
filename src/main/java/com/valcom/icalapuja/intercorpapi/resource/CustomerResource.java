@@ -49,7 +49,7 @@ public class CustomerResource {
 		return new ResponseEntity<>(customerService.getAllCustomer(),HttpStatus.OK);
 	}
 	
-	@GetMapping("/statistics")
+	@GetMapping("/customers/statistics")
 	public ResponseEntity<?> getStatistics() {
 		return new ResponseEntity<>(customerService.getStatistics(),HttpStatus.OK);
 	}
