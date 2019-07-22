@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "f2f0a6be-e741-4637-bd46-e057b8b6d8fb",
+		"name": "intercorpapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "statistics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8008/api/customers/statistics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"api",
+						"customers",
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8008/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AgregarCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\":\"Ivan\",\r\n\t\"lastName\":\"Calapuja\",\r\n\t\"birthDate\": \"1983-11-07\"\r\n}\r\n\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8008/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
